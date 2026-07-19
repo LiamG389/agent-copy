@@ -1,4 +1,4 @@
-Clone Repo + Run 
+Clone Repo, add API key in `agent.py`, + Run 
 ```
 streamlit run dashboard.py
 ```
