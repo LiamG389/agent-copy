@@ -84,7 +84,7 @@ def list_events(start_date: str, end_date: str) -> list[dict]:
 
 
 def create_event(title: str, start: str, end: str) -> dict:
-    """Create a new calendar event. Call list_events first to check for conflicts. """
+    """Create a new calendar event. Call list_events first to check for conflicts. Start and end should be in the format (24 Hour Clock):YYYY-MM-DD HH:MM"""
     print(f"    🔹 [Executing Tool] create_event(title='{title}', start='{start}', end='{end}')")
     event = {"id": len(MOCK_CALENDAR) + 1, "title": title, "start": start, "end": end}
     MOCK_CALENDAR.append(event)
